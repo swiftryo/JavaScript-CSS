@@ -11,4 +11,10 @@
   margin: 50px 0;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease 1s;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
 }
