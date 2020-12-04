@@ -43,6 +43,7 @@
 //     margin: 0 auto;
 // }
 
+
 /**
  * 上下方向のレイアウト
  */
@@ -56,8 +57,9 @@
 //   transform: translate(-50%, -50%);
 // }
 
-// .parent {
-//   display: flex;
-//   flex-direction: row-reverse;
-//   justify-content: center;
-// }
+.parent {
+  display: flex;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  flex-direction: column;
+}
