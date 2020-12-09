@@ -31,7 +31,6 @@ img {
 }
 
 
-
 @keyframes kf-cover-slide {
   0% {
     left: 0;
@@ -106,5 +105,25 @@ img {
   }
   &:hover::before {
     background-color: rgba(0,0,0,0.4);
+  }
+}
+
+.bg-img-zoom {
+  background-image: url(images/image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  @extend .img-zoom
+}
+
+.img-bg50 {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    padding-top: 50%;
   }
 }
