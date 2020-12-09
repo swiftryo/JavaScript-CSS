@@ -13,4 +13,4 @@ console.log(typeof variable)
 // 動的型付け言語
 
 // 静的型付け言語
-int num = 12;
+// int num = 12;
