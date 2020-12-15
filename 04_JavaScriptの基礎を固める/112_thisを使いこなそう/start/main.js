@@ -24,13 +24,15 @@ class TextAnimation {
     }
     animate() {
         // const _that = this;
-
+        
         // console.log(this);
-
-        // window.setTimeout(function() {
+        
+        window.setTimeout(function() {
+            console.log(this);
             // console.log(_that);
         this.el.classList.toggle('inview');
-        // }.bind(this));
+        }.bind(this));
+        // });
     }
 }
 
