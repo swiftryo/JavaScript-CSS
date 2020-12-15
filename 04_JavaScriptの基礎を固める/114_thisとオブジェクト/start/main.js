@@ -6,7 +6,17 @@ const obj = {
         const fn = function() {
             console.log(this);
         };
-        window.setTimeout(fn);  
+        window.setTimeout(fn)  
+    }
+}
+
+// JSでのthisはオブジェクトを参照するキーワード(保持)
+// thisは呼ばれた状況によってとりうる値が変わる
+
+const window = {
+    setTimeout: function(fn) {
+        fn();
+
     }
 }
 
@@ -24,6 +34,10 @@ class MyObj {
         window.setTimeout(fn)   
     }
 }
+
+// クラスを定義したときにはオブジェクトは生成されていない
+// thisキーワードを使用
+
 
 const obj2 = new MyObj();
 
