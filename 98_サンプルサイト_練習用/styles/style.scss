@@ -1,0 +1,29 @@
+@import "breakpoints/base";
+
+@media (max-width: 480px) {
+  @import "breakpoints/480up";
+}
+// スマホ横にしたとき
+@media (min-width: 600px) {
+  @import "breakpoints/600up";
+}
+// タブレットなど
+@media (min-width: 960px) {
+  @import "breakpoints/960up";
+}
+// 小さいPCやノートPC
+@media (min-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+// 通常のディスプレイ
+
+@media (min-resolution: 192dpi),
+      (-webkit-min-device-pixel-ratio: 2) {
+        @import "breakpoints/2x";
+      }
+
+@media print {
+  @import "breakpoints/print";
+}
+
+// モバイルファースト！！　モバイルがシンプル　デスクトップからだと複雑になる
